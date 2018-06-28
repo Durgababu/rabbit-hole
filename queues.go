@@ -63,6 +63,8 @@ type QueueInfo struct {
 	Memory int64 `json:"memory"`
 	// How many consumers this queue has
 	Consumers int `json:"consumers"`
+	// How many active consumers this queue has
+	ActiveConsumers     int64   `json:"active_consumers"`
 	// Utilisation of all the consumers
 	ConsumerUtilisation float64 `json:"consumer_utilisation"`
 	// If there is an exclusive consumer, its consumer tag
