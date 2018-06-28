@@ -1,0 +1,3 @@
+In queue.go file, added ActiveConsumers in QueueInfo structure as below
+//How many active consumers this queue has
+ActiveConsumers     int64   `json:"active_consumers"`
